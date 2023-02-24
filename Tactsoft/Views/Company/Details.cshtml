@@ -1,0 +1,206 @@
+﻿@model Tactsoft.Core.Entities.Company
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h4 class="m-0">@ViewData["Title"]</h4>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h3 class="card-title">Employee Details</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanyNameEnglishName)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanyNameEnglishName)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanyNameBanglaName)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanyNameBanglaName)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Entrepreneur)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Entrepreneur.EntrepreneurName)
+                            </dd>
+
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanySize)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanySize)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanyCountry)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanyCountry)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.District)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.District.DistrictName)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Thana)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Thana.ThanaTypeName)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanyAddressEnglish)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanyAddressEnglish)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompanyAddressBangla)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompanyAddressBangla)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.IndustialType)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.IndustialType.IndustialTypeName)
+                            </dd>
+
+                             <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.BusinessDescription)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.BusinessDescription)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.BusinessTradeLicienceNo)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.BusinessTradeLicienceNo)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.RLNO)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.RLNO)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.WebsiteUrl)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.WebsiteUrl)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ContactPersonName)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ContactPersonName)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ContactPersonDesignation)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ContactPersonDesignation)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ContactPersonEmail)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ContactPersonEmail)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ContactPersonMobile)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ContactPersonMobile)
+                            </dd>
+
+
+                        </div>
+
+                        
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+
+                            <a class="btn btn-outline-danger btn-sm mr-2" asp-action="Index">
+                                <i class="far fa-window-close"></i> Cancel
+                            </a>
+                            <a class="btn btn-outline-primary btn-sm me-3" asp-action="Edit" asp-route-id="@Model?.Id">
+                                <i class="fa-regular fa-pen-to-square"></i> Edit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
