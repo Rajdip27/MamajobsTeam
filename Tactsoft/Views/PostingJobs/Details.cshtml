@@ -1,0 +1,346 @@
+﻿@model Tactsoft.Core.Entities.PostingJobs
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h4 class="m-0">@ViewData["Title"]</h4>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h3 class="card-title">Posting Jobs Details</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ServiceTypeName)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ServiceTypeName)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobTittle)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobTittle)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.NoofVacancies)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.NoofVacancies)
+                            </dd>
+
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobCategoryeId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobCategoryeId)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.EmploymentStatusId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.EmploymentStatusId)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ApplicationDeadline)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ApplicationDeadline)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ResumeOptionId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ResumeOptionId)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.SpecialInstructionforjobSeekers)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.SpecialInstructionforjobSeekers)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobLevelId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobLevelId)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobContext)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobContext)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobResponsibillites)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobResponsibillites)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.WorkPlaceId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.WorkPlaceId)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.JobLocationId)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.JobLocationId)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Main)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Main)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Max)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Max)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.AdditionalSalaryinfo)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.AdditionalSalaryinfo)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.CompensationandOtherbenefits)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.CompensationandOtherbenefits)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Degree)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Degree)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.PreferredEducationInstitution)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.PreferredEducationInstitution)
+                            </dd>
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.OtherEducationQualification)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.OtherEducationQualification)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.OtherEducationQualification)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.OtherEducationQualification)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.OtherEducationQualification)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.OtherEducationQualification)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.TradeCourse)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.TradeCourse)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.ProfessionalCertification)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.ProfessionalCertification)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Experience)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Experience)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.MinimumYearofExperience)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.MinimumYearofExperience)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.MaximumYearofExperience)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.MaximumYearofExperience)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.AreaOfExperience)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.AreaOfExperience)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.AreaOfBusiness)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.AreaOfBusiness)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Skills)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Skills)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.AdditionalRequirements)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.AdditionalRequirements)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Gender)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Gender)
+                            </dd>
+
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Mainage)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Mainage)
+                            </dd>
+
+                            <dt class="col-sm-6">
+                                @Html.DisplayNameFor(model => model.Maxage)
+                            </dt>
+                            <dd class="col-sm-6">
+
+                                @Html.DisplayFor(model => model.Maxage)
+                            </dd>
+                        </div>
+
+                        <div class="col-md-4">
+                            <dl class="row">
+                                <dt class="col-md-6">
+                                    @Html.DisplayNameFor(model => model.Photograph)
+                                </dt>
+
+                                <dd class="col-md-6">
+                                    <img src="~/images/PostingJobs/@Html.DisplayFor(model => model.Photograph)" alt="Image" width="200" class="img-thumbnail" />
+                                </dd>
+                            </dl>
+                        </div>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+
+                            <a class="btn btn-outline-danger btn-sm mr-2" asp-action="Index">
+                                <i class="far fa-window-close"></i> Cancel
+                            </a>
+                            <a class="btn btn-outline-primary btn-sm me-3" asp-action="Edit" asp-route-id="@Model?.Id">
+                                <i class="fa-regular fa-pen-to-square"></i> Edit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
