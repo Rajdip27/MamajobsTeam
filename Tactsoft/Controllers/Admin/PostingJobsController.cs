@@ -29,7 +29,7 @@ namespace Tactsoft.Controllers.Admin
 
         public async Task<IActionResult> Index()
         {
-             var Result=await _jobService.GetAllAsync(i => i.JobCategory, x => x.JobLevel, x => x.WorkPlace, x => x.JobLocation,x =>x.ResumeReceivingOption);
+             var Result=await _jobService.GetAllAsync(i => i.JobCategory, x => x.JobLevel, x => x.WorkPlace, x => x.JobLocation,x =>x.ResumeReceivingOption, x => x.EmploymentStatus);
             
             return View(Result);
         }
