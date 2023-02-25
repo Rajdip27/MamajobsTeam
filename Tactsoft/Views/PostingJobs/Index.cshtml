@@ -163,7 +163,7 @@
                                 <tr>
 
                                     <td>
-                                        <img class="img-thumbnail" width="50" src="~/images/@Html.DisplayFor(modelItem => item.Photograph)" alt="Image" />
+                                        <img class="img-thumbnail" width="50" src="~/images/PostingJobs/@Html.DisplayFor(modelItem => item.Photograph)" alt="Image" />
                                     </td>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.ServiceTypeName)
@@ -176,23 +176,23 @@
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.JobCategoryeId)
+                                        @Html.DisplayFor(modelItem => item.JobCategory.JobCategoryeName)
                                     </td>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.EmploymentStatusId)
+                                        @Html.DisplayFor(modelItem => item.EmploymentStatus.EmploymentStatusName)
                                     </td>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.ApplicationDeadline)
                                     </td>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.ResumeOptionId)
+                                        @Html.DisplayFor(modelItem => item.ResumeReceivingOption.ResumeOption)
                                     </td>
 
                                     <td>
                                         @Html.DisplayFor(modelItem => item.SpecialInstructionforjobSeekers)
                                     </td>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.JobLevelId)
+                                        @Html.DisplayFor(modelItem => item.JobLevel.JobLevelName)
                                     </td>
 
                                     <td>
@@ -205,11 +205,11 @@
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.WorkPlaceId)
+                                        @Html.DisplayFor(modelItem => item.WorkPlace.WorkPlaceName)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.JobLocationId)
+                                        @Html.DisplayFor(modelItem => item.JobLocation.JobLocationName)
                                     </td>
 
 
